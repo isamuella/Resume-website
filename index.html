@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <span>Samuella</span>
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Dky6oeSAkePQlUEoGOqE1WYnBDkNUHGz0aRVwwq1uSUEJqRsuUxRJzT3ep0Lw_y-R1Y&usqp=CAU" class="logo" alt="logo"> -->
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="work.html">WORK EXPERIENCE</a></li>
+                <li><a href="contact.html">CONTACT INFO</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h1>Hey I'm Samuella</h1>
+            <h2><span>W</span>EB <span>D</span>EVELOPER</h2>
+            <p>I am a first-year Software Engineering student at the African Leadership University,
+                <br>passionate about expanding my knowledge and skills to drive future success.</br></p>
+            <a href="#">Hire Me</a>
+        </div>
+
+        <div class="image">
+            <img src="Subject.png" class="me" alt="my image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>    
+</body>
+</html>
