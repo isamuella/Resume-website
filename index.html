@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="main">
+    <div id="home" class="main">
         <div class="navbar">
             <span>Samuella</span>
-            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Dky6oeSAkePQlUEoGOqE1WYnBDkNUHGz0aRVwwq1uSUEJqRsuUxRJzT3ep0Lw_y-R1Y&usqp=CAU" class="logo" alt="logo"> -->
             <button class="menu-toggle">☰</button>
             <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="skills.html">SKILLS</a></li>
-                <li><a href="education.html">EDUCATION</a></li>
-                <li><a href="work.html">WORK EXPERIENCE</a></li>
-                <li><a href="contact.html">CONTACT INFO</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#work">WORK EXPERIENCE</a></li>
             </ul>
         </div>
 
         <div class="info">
             <h1>Hey I'm Samuella</h1>
             <h2><span>W</span>EB <span>D</span>EVELOPER</h2>
-            <p>I qm a first-year Software Engineering student at the African Leadership University,
-                <br>passionate about expanding my knowledge and skills to drive future success.</br></p>
-            <a href="#">Hire Me</a>
+            <p>I am a first-year Software Engineering student at the African Leadership University,
+                passionate about expanding my knowledge and skills to drive future success.</p>
+            <a href="#" class="hire-btn">Hire Me</a>
         </div>
 
         <div class="image">
@@ -35,15 +35,128 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navLinks = document.querySelector(".nav-links");
-            
-            menuToggle.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-            });
-        });
-    </script>    
+    <div id="about" class="main1">
+        <div class="about">
+            <h1><img src="info.png" alt="icon" class="icon">Who am I?</h1>
+            <p class="text">Hey, I am Ineza Samuella a Rwandan girl and a first year 
+            student at the African Leadership University, pursuing the 
+            bachelor's degree in Software Engineering. I like making new
+            friends, listening to gospel music, exploring and discovering 
+            new things. I think working hard pays off, so I always push 
+            myself to do more.</p>
+        </div>
+        <div class="home1">
+
+        </div>
+    </div>
+
+    <div id="skills" class="main2">
+        <div class="skills">
+            <h1><img src="skill.png" alt="icon" class="icon">MY SKILLS</h1>
+            <div class="skill1">
+                <h2>Communication Skills</h2>
+                <p>Fluent in English, French, Kinyarwanda, and Swahili</p>
+            </div>
+
+            <div class="skill2">
+                <h2>Hard Skills</h2>
+                <ul class="list1">
+                    <li>Phython Programming.</li>
+                    <li>Front-end web development.</li>
+                </ul>
+            </div>
+
+            <div class="skill3">
+                <h2>Soft Skills</h2>
+                <ul class="list2">
+                    <li>Team work.</li>
+                    <li>Time management.</li>
+                    <li>Organization skills.</li>
+                    <li>Critical thinking.</li>
+                    <li>Problem solving.</li>
+                </ul>
+            </div>
+
+            <div class="skill4">
+                <h2>Leadership Skills</h2>
+                <ul class="list3">
+                    <li>Able to cordinating and motivating a team to achieve common goals.</li>
+                    <li>Able to providing constructing feedbacks to subordinates.</li>
+                    <li>Able to receive and apply feedback for improvement.</li>
+                    <li>Able to resolve team conflicts.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="home2">
+
+        </div>
+    </div>
+
+    <div id="education" class="main4">
+        <div class="background">
+            <h1><img src="education.png" alt="icon" class="icon">MY EDUCATIONAL BACKGROUND</h1>
+
+            <p class="intro">I grew up in the western part of Rwanda, so I did most of my education from there, 
+                in Rubavu District and in Gisenyi town.</p>
+
+            <h2 class="basic">NURSERY & PRIMARY</h2>
+            <p class="first">For my first 2 years of nursery i went to <a href="https://www.youtube.com/channel/UCixlhEoc2qBOObEsnmO9dmw/about">LA PROMISE SCHOOL</a> 
+            and I was then taken to a new school by my father where i did the remaining nursery class and all of my primary was done at
+            <a href="https://www.facebook.com/p/Le-Bon-Berger-Primary-and-Nursery-school-100069861541169/">LE BON BERGER SCHOOL</a></p>
+
+            <h2 class="advanced">HIGH SCHOOL</h2>
+            <p class="second">I went to two different schools, for the first two years I went to <a href="https://www.facebook.com/people/GSNDA-Nyundo/100064840052430/?locale=fr_CA">GSNDA.</a>
+            Then in 2020 I left Rubavu to go to Kigali for the rest of my high school at <a href="https://nuvisionhighschool.com/">NU VISION HIGH SCHOOL</a></p>
+        </div>
+        <div class="home4">
+
+        </div>
+    </div>
+
+    <div id="work" class="main5">
+        <div class="works">
+            <h1><img src="briefcase.png" alt="case" class="icon" style="margin-right: 10px;">WORK EXPERIENCE</h1>
+            <div class="vol">
+                <h2>Volunteer Work</h2>
+                <ul class="list">
+                    <li>DevFest Kigali</li>
+                    <li>Women GAIN</li>
+                    <li>Tarama Rwanda</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="home5">
+
+        </div>
+    </div>  
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: ineza.s@alustudent.com</p>
+                <p>Location: Kigali, Rwanda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#skills">Skills</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Samuella. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
